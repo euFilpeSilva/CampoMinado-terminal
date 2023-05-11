@@ -11,17 +11,17 @@ Este repositório contém um jogo de Campo Minado feito em Java. O jogo consiste
 Java Runtime Environment (JRE) instalado
 
 #### Passos
-1 Clone o repositório para o seu computador ou baixe o arquivo ZIP e extraia-o.
-2 Abra o terminal na pasta raiz do projeto.
-3 Compile o projeto com o seguinte comando:
+1- Clone o repositório para o seu computador ou baixe o arquivo ZIP e extraia-o.
+2- Abra o terminal na pasta raiz do projeto.
+3- Compile o projeto com o seguinte comando:
 
   javac jogocampominado/CampoMinado.java
   
- 4 Execute o projeto com o seguinte comando:
+ 4- Execute o projeto com o seguinte comando:
  
   java jogocampominado.CampoMinado
   
-  5 O jogo começará com um tabuleiro vazio. Digite as coordenadas (linha e coluna) que deseja revelar.
+  5- O jogo começará com um tabuleiro vazio. Digite as coordenadas (linha e coluna) que deseja revelar.
   Se a casa contiver uma mina, você perde o jogo. Se a casa não contiver uma mina, ela será revelada
   e mostrará o número de minas adjacentes. O jogo continua até que todas as casas que não contêm minas
   sejam reveladas ou     uma mina seja clicada.
@@ -37,12 +37,10 @@ revelado - um array bidimensional que indica quais casas do tabuleiro foram reve
 proximidade - um array bidimensional que indica, para cada casa do tabuleiro, o número de minas adjacentes
 linhas e colunas - as dimensões do tabuleiro
 
-O jogo é iniciado no método main, que cria uma instância da classe CampoMinado e chama o método jogar para começar o jogo. O método jogar contém um laço que continua até que o jogador ganhe ou perca o jogo. Dentro do laço, o método mostrarTabuleiro é chamado para exibir o tabuleiro atual, e o jogador é solicitado a digitar as coordenadas que deseja revelar. Se a casa contiver uma mina, o jogador perde o jogo e o método mostrarMinas é chamado para exibir todas as minas no tabuleiro. Se o jogador revelar todas as casas que não contêm minas, ele ganha o jogo.
+O jogo Campo Minado é implementado pela classe CampoMinado. Quando a classe é inicializada, o tamanho do tabuleiro e o número de minas são especificados. O método gerarMinas() é chamado para posicionar aleatoriamente as minas no tabuleiro e calcular quantas minas estão presentes em células adjacentes. O jogo começa quando o método jogar() é chamado. Dentro do laço while, o método mostrarTabuleiro() é chamado para exibir o tabuleiro. O jogador é solicitado a fornecer as coordenadas da célula a ser revelada. Se a célula contiver uma mina, o jogo termina e todas as minas são reveladas. Se a célula não contiver uma mina, o número de minas adjacentes é exibido. O jogo termina quando todas as células sem minas tiverem sido reveladas.
 
-O método gerarMinas é chamado no início do jogo para gerar as minas aleatoriamente no tabuleiro. O método utiliza a classe Random para gerar números aleatórios, e um laço while para garantir que o número de minas geradas seja igual ao número especificado pelo jogador. Em seguida, o método percorre o tabuleiro e calcula o número de minas adjacentes para cada casa, armazenando essas informações no array proximidade.
-
-O método mostrarTabuleiro é respons
-
+## Contribuindo
+Se você deseja contribuir para o desenvolvimento deste jogo, sinta-se à vontade para fazer um fork deste repositório e enviar suas alterações através de pull requests. Serão muito bem-vindos quaisquer sugestões ou melhorias para o jogo!
 
 
 
