@@ -11,17 +11,19 @@ Este repositório contém um jogo de Campo Minado feito em Java. O jogo consiste
 Java Runtime Environment (JRE) instalado
 
 #### Passos
-1- Clone o repositório para o seu computador ou baixe o arquivo ZIP e extraia-o.
-2- Abra o terminal na pasta raiz do projeto.
-3- Compile o projeto com o seguinte comando:
+1 - Clone o repositório para o seu computador ou baixe o arquivo ZIP e extraia-o.
+
+2 - Abra o terminal na pasta raiz do projeto.
+
+3 - Compile o projeto com o seguinte comando:
 
   javac jogocampominado/CampoMinado.java
   
- 4- Execute o projeto com o seguinte comando:
+4 - Execute o projeto com o seguinte comando:
  
   java jogocampominado.CampoMinado
   
-  5- O jogo começará com um tabuleiro vazio. Digite as coordenadas (linha e coluna) que deseja revelar.
+  5 - O jogo começará com um tabuleiro vazio. Digite as coordenadas (linha e coluna) que deseja revelar.
   Se a casa contiver uma mina, você perde o jogo. Se a casa não contiver uma mina, ela será revelada
   e mostrará o número de minas adjacentes. O jogo continua até que todas as casas que não contêm minas
   sejam reveladas ou     uma mina seja clicada.
